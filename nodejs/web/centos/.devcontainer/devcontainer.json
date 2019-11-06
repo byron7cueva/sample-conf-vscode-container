@@ -1,0 +1,19 @@
+{
+    "name": "Node.js",
+    "dockerFile": "Dockerfile",
+    "runArgs": ["-u", "web"],
+
+    // Publish port.
+	"appPort": 8080,
+
+	"settings":  {
+		// Habilita la posibilidad de integrar la terminal del contenedor
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"extensions": [
+		//publisher.name -> package.json plugin
+		"donjayamanne.githistory",
+		"ritwickdey.liveserver"
+	]
+}
